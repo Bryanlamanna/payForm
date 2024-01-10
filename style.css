@@ -22,6 +22,7 @@ button {
     outline: none;
     border: none;
     cursor: pointer;
+    background-color: white;
 }
 
 .input-card, .input-pix, .input-value {
@@ -46,7 +47,7 @@ button {
     margin: 0 auto;
     border-radius: 8px;
     padding: .3em;
-    padding-bottom: 1em;
+   
     background-color: rgb(184, 184, 184);
         
 }
@@ -107,4 +108,5 @@ ul {
 }
 
 .pix-box {
+    display: none;
 }
