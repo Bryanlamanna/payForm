@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payForm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+    
+    <div class="pay-form">
+
+        <div class="header-box">
+            <p class="text-form">Valor do Pagamento</p>
+            <input type="number" name="value" class="input-value">
+            <div class="radios">
+                <input type="radio" name="PIX" class="radio-pix">
+                <input type="radio" name="credit" class="radio-credit">
+            </div>
+            <div class="button-form">
+                <button class="btn">Informar Dados</button>
+            </div>
+        </div>
+
+        <div class="credit-box">
+            <p class="text-form">Cartão de Credito</p>
+            <div class="number">
+                <p class="text-form">Número</p>
+                <input type="number" name="card-number" class="input-card">
+                <img src="" alt="">
+            </div>
+            <span class="invalid-card">Número de cartão inválido</span>
+            <div class="name">
+                <p class="text-form">Titular</p>
+                <input type="text" name="card-name" class="input-card">
+            </div>
+            <div class="code">
+                <p class="text-form">CVV</p>
+                <input type="text" name="card-code" class="input-card">
+            </div>
+            <div class="date">
+                <p class="text-form">Validade</p>
+                <input type="text" name="card-date" class="input-card">
+            </div>
+            <div class="payments">
+                <p class="text-form">Parcelas</p>
+                <div class="dropdown-form">
+                    <div class="select">
+                        <span class="selected">Selecione</span> 
+                        <i class="fa-solid fa-caret-down" style="font-size: medium;
+                        color: rgb(46, 46, 46);
+                        margin-left: .5em;
+                        margin-top: .3em"></i>
+                        </div>
+                    <ul class="menu">
+                        <li>1x</li>
+                        <li>2x</li>
+                        <li>3x</li>
+                        <li>4x</li>
+                        <li>5x</li>
+                        <li>6x</li>
+                        <li>7x</li>
+                        <li>8x</li>
+                        <li>9x</li>
+                        <li>10x</li>
+                        <li>11x</li>
+                        <li>12x</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="pix-box">
+            <p class="text-form">PIX</p>
+            <input type="text" name="cpf" class="input-pix">
+            <p class="total"></p>
+            <button class="btn">Pagar</button> 
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

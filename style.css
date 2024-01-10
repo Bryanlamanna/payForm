@@ -1,0 +1,110 @@
+* {
+    margin: .1em;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+        align-items: center;
+}
+
+button {
+    padding-top: .2em;
+    padding-bottom: .2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-radius: 8px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.input-card, .input-pix, .input-value {
+    border-radius: 8px;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    padding-left: .5em;
+    padding-right: .5em;
+    outline: none;
+    border: none;
+}
+
+.button-form {
+    display: flex;
+    cursor: pointer;
+}
+
+.pay-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: .3em;
+    padding-bottom: 1em;
+    background-color: rgb(184, 184, 184);
+        
+}
+
+.radio-pix {
+    margin-right: 1.7em;
+}
+
+.radio-pix::before {
+    content: "PIX";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    transform: translate(1.2em, -.1em);
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+.radio-credit::before {
+    content: "Cartão de Crédito";
+    display: inline-block;
+    width: 8em;
+    height: 16px;
+    transform: translate(1.2em, -.1em);
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.select {
+    background-color: white;
+    border-radius: 8px;
+    width: 7em;
+    padding-left: .2em;
+}
+
+.select i {
+    transform: translateX(.4em);
+}
+
+ul {
+    list-style: none;
+    display: none;
+}
+
+.invalid-card {
+    position: absolute;
+    font-size: x-small;
+    color: red;
+    transform: translate(6em,0);
+    opacity: 0;
+}
+
+.credit-box {
+    display: none;
+}
+
+.pix-box {
+}
