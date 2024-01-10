@@ -58,6 +58,7 @@ button {
 
 .radio-pix::before {
     content: "PIX";
+    font-size: small;
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -69,6 +70,7 @@ button {
 
 
 .radio-credit::before {
+    font-size: small;
     content: "Cartão de Crédito";
     display: inline-block;
     width: 8em;
@@ -103,6 +105,14 @@ ul {
     opacity: 0;
 }
 
+.text-form {
+    font-size: small;
+}
+
+.text-title {
+    font-style: oblique;
+}
+
 .credit-box {
     display: none;
 }
@@ -110,3 +120,4 @@ ul {
 .pix-box {
     display: none;
 }
+
